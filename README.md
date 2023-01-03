@@ -10,7 +10,7 @@
 
 | Member (uniqname) | Role | Office Hours |
 | :---------------- | :--- | :----------- |
-| [Z. Morley Mao](https://web.eecs.umich.edu/~zmao/) (zmao) | Faculty | [F: 9 - 10 AM](https://officehours.it.umich.edu/queue/1293) and by appt.
+| [Z. Morley Mao](https://web.eecs.umich.edu/~zmao/) (zmao) | Faculty | [Fri: 9 - 10 AM](https://officehours.it.umich.edu/queue/1293) and by appt.
 | Karen Lou | GSI | [Monday 4-6pm]
 | Leo Zhu  | GSI | [Tuesday 4-6pm]
 
@@ -59,7 +59,7 @@ Nonetheless, you must have a good working knowledge of C/C++ and Unix family of 
 | 03/27/23 | [Switched LAN] | **No Class** | 6.4
 | 04/03/23 | [Wireless Networking]| [Datacenter Networking]| 6.6, 7.1, 7.2, 7.3
 | 04/10/23 | [*Final Review*] | **No Class** | 
-| 04/17/23 |**No Class** | | A4 Due
+| 04/17/23 |**No Class** | | | A4 Due
 | 04/21/23 | **FINAL (90 Min; Online) <br> 9 AM EDT <br> and <br> 8 PM EDT**
 
 ## Policies
