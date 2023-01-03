@@ -1,22 +1,21 @@
-# EECS 489: Computer Networks (F’21)
+# EECS 489: Computer Networks (W’23)
 
 ## Administrivia
- - Catalog Number: 26207 (In-person) & 38527 (Remote)
- - Lectures: 2505 GBL (Recorded), MW: 3:00 PM – 4:30 PM
- - Discussion 1: Live Online, F 9:30 AM – 10:30 AM
- - Discussion 2: 1005 DOW, Th 5:00 PM – 6:00 PM
- - Discussion 3: 1014 DOW, F 12:30 PM – 1:30 PM
+ - Lectures: 1109 FXB (Recorded), MW: 9:00 AM – 10:30 AM
+ - Discussion 1: F 930-1030AM 3150 DOW
+ - Discussion 2: TH 430-530PM 2153 GGBL
+ - Discussion 3: F 1230-130PM 1311 EECS
 
 ### Team
 
 | Member (uniqname) | Role | Office Hours |
 | :---------------- | :--- | :----------- |
-| [Mosharaf Chowdhury](http://www.mosharaf.com/) (mosharaf) | Faculty | [W: 2:00 PM - 2:50 PM](https://officehours.it.umich.edu/queue/421) and by appt.
-| Yinwei Dai | GSI | [Th: 4:00 PM - 6:00 PM](https://officehours.it.umich.edu/queue/907)
-| Jiaxing Yang | GSI | [T: 10:00 AM - 12:00 PM](https://officehours.it.umich.edu/queue/910)
+| [Z. Morley Mao](https://web.eecs.umich.edu/~zmao/) (zmao) | Faculty | [W: 2:00 PM - 2:50 PM](https://officehours.it.umich.edu/queue/1293) and by appt.
+| Karen Lou | GSI | [Monday 4-6pm]
+| Leo Zhu  | GSI | [Tuesday 4-6pm]
 
 ### Piazza
-All communication regarding this course must be via [Piazza](https://piazza.com/umich/fall2021/eecs489). 
+All communication regarding this course must be via [Piazza](https://piazza.com/class/lc7u1gvcpzr2r6). 
 This includes questions, discussions, announcements, as well as private messages.
 
 ## Course Description
@@ -37,8 +36,6 @@ The enforced prerequisite for this course is EECS 281 (Data Structures and Algor
 This course does not assume or require any prior knowledge of EECS 482.
 Nonetheless, you must have a good working knowledge of C/C++ and Unix family of operating systems.
 
-If needed, you can get an override by signing up [here](https://forms.gle/vaW6x4UsbjFvT6WP7).
-
 ### Optional Textbook
 
 - Kurose and Ross, Computer Networking: A Top-Down Approach, 7th. or Earlier Editions, Pearson, 2016. ISBN 978-0133594140.
@@ -47,28 +44,29 @@ If needed, you can get an override by signing up [here](https://forms.gle/vaW6x4
 
 | Week of  | Monday | Wednesday | Optional Readings | Assignments
 |:---------|:------:|:---------:|:------------------|:----------:
-| 08/30/21 | [Introduction and Overview](Slides/083021.pptx) | **No Class** | 1.1, 1.3, 1.4 | A1 Out
-| 09/06/21 | **No Class** | [Protocol Layering](Slides/090821.pptx) | 1.5
-| 09/13/21 | [HTTP and the Web](Slides/091321.pptx) | [DNS and CDN](Slides/091521.pptx) | 2.2, 2.4
-| 09/20/21 | [Video Streaming and Cloud Systems](Slides/092021.pptx) | [Transport Layer](Slides/092221.pptx) | 2.6, 3.1, 3.2, 3.3, 3.4 | A1 Due<br>A2 Out
-| 09/27/21 | [TCP Basics](Slides/092721.pptx) | [Flow and Congestion Control](Slides/092921.pptx) | 3.5, 3.6
-| 10/04/21 | [More Congestion Control](Slides/100421.pptx) | [Network Layer and IP](Slides/100621.pptx) | 3.7, 4.1, 4.3.1, 4.3.2, 4.3.5
-| 10/11/21 | [IP Routers](Slides/101121.pptx) | [*Midterm Review*](Slides/101321.pptx) | 4.2
-| 10/18/21 | **No Class** | **MIDTERM (90 Min; Online) <br> 3 PM EDT <br> and <br> 11 PM EDT** |  | A2 Due
-| 10/25/21 | **No Class** | **No Class** | | A3 Out
-| 11/01/21 | [Routing Fundamentals](Slides/110121.pptx) | [Intra-AS Routing](Slides/110321.pptx) | 5.1, 5.2, 5.3
-| 11/08/21 | [IP Addressing and Inter-AS Routing](Slides/110821.pptx) | [BGP](Slides/111021.pptx) | 4.3.3, 5.4
-| 11/15/21 | [Software-Defined Networking](Slides/111521.pptx) | [Link Layer](Slides/111721.pptx) | 4.4, 5.5, 6.1, 6.3 | A3 Due<br>A4 Out
-| 11/22/21 | [Switched LAN](Slides/112221.pptx) | **No Class** | 6.4
-| 11/29/21 | [Wireless Networking](Slides/112921.pptx) | [Datacenter Networking](Slides/120121.pptx) | 6.6, 7.1, 7.2, 7.3
-| 12/06/21 | [*Final Review*](Slides/120621.pptx) | **No Class** | | A4 Due
-| 12/20/21 | **FINAL (90 Min; Online) <br> 8 AM EDT <br> and <br> 8 PM EDT**
+| 01/02/23 | **No Class** | [Introduction and Overview] | 1.1, 1.3, 1.4 | A1 Out
+| 01/09/23 | [Protocol Layering]| [HTTP and the Web] | 1.5
+| 01/16/23 | **No Class** | [DNS and CDN] | 2.2, 2.4
+| 01/23/23 | [Video Streaming and Cloud Systems]| [Transport Layer]|  2.6, 3.1, 3.2, 3.3, 3.4 | A1 Due<br>A2 Out
+| 01/30/23 | [TCP Basics] | [Flow and Congestion Control] | 3.5, 3.6 
+| 02/06/23 | [More Congestion Control]| [Network Layer and IP] | 3.7, 4.1, 4.3.1, 4.3.2, 4.3.5
+| 02/13/23 |  [IP Routers] |  [*Midterm Review*] | 4.2
+| 02/20/23 | **No Class** | **MIDTERM (90 Min; Online) <br> 9 AM EDT <br> and <br> 8 PM EDT** |  | A2 Due
+| 02/27/23 | **No Class** | **No Class** | | A3 Out
+| 03/06/23 | [Routing Fundamentals] | [Intra-AS Routing]| 5.1, 5.2, 5.3
+| 03/13/23 | [IP Addressing and Inter-AS Routing]| [BGP]| 4.3.3, 5.4
+| 03/20/23 | [Software-Defined Networking] | [Link Layer] | 4.4, 5.5, 6.1, 6.3 | A3 Due<br>A4 Out
+| 03/27/23 | [Switched LAN] | **No Class** | 6.4
+| 04/03/23 | [Wireless Networking]| [Datacenter Networking]| 6.6, 7.1, 7.2, 7.3
+| 04/10/23 | [*Final Review*] | **No Class** | 
+| 04/17/23 |**No Class** | | A4 Due
+| 04/21/23 | **FINAL (90 Min; Online) <br> 9 AM EDT <br> and <br> 8 PM EDT**
 
 ## Policies
 
 ### Assignments
 Four assignments will be assigned during the semester; the first one will be done individually and the rest will be in groups.
-Visit [this page](Assignments) for detailed policies on assignments (including late submission policies) as well as the assignments themselves. 
+<!--- Visit [this page](Assignments) for detailed policies on assignments (including late submission policies) as well as the assignments themselves. -->
 
 ### Exams
 There will be two exams during the semester: a midterm exam and the final exam. 
@@ -91,15 +89,9 @@ Please feel free to contact us with any problems, concerns, or suggestions.
 
 ### Lecture Recordings
 
-Course lectures may be audio/video recorded and made available to other students in this course. As part of your participation in this course, you may be recorded. If you do not wish to be recorded, please contact `eecs489-staff` the first week of class to discuss alternative arrangements.
+Course lectures may be audio/video recorded and made available to other students in this course. As part of your participation in this course, you may be recorded. If you do not wish to be recorded, please contact `eecs489-staff-w23` the first week of class to discuss alternative arrangements.
 
 Students may not record or distribute any class activity without written permission from the instructor, except as necessary as part of approved accommodations for students with disabilities. Any approved recordings may only be used for the student’s own private use.
-
-### Quizzes
-Each lecture has an associated quiz (available via canvas) that is made available sometime after the lecture and will be available for at least 48 hours. 
-
-Quizzes are *not* graded for correctness; they are for self-evaluating your understanding of the material. 
-However, completing each quiz will result in 0.1% bonus grade after the total grade has been calculated at the end of the semester (for a maximum of 2% bonus grade over 20 quizzes).
 
 ## Grading
 Final grades will be based on the total points earned on the assignments and exams. 
@@ -115,4 +107,3 @@ The tentative point breakdown is:
 | Midterm Exam | 25%        
 | Final Exam   | 25%
 | **Total**    |100%
-| Quiz (Bonus) |  2%  
