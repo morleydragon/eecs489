@@ -1,4 +1,4 @@
-# EECS 489: Computer Networks (F’21)
+# EECS 489: Computer Networks (W’23)
 
 ## Assignments and Policies
 
@@ -7,15 +7,15 @@ Each assignment will require a substantial time commitment on your part.
 
 ### Use of GitHub
 All assignments will be hosted at [GitHub](https://github.com/eecs489). 
-Please sign up for a free github account if you don't already have one, then [register your github username with us](https://docs.google.com/forms/d/e/1FAIpQLSdYfoGeP9YbMOsxFrOWM03YXNRArSppqQ3RqNKIp0fFHgyKbQ/viewform?usp=sf_link). 
+Please sign up for a free github account if you don't already have one, then [register your github username with us](https://forms.gle/S6oKGPswbv2sAaHn8). 
 The `eecs489` organization at github will provide a private repository for each group for each assignment. 
 Commits to the repository should reflect the proportion of work performed by each group memer. 
 If you use pair programming, take turns at the keyboard so that the commit log reflects the contributions of both members.
 
 ### Group Work
 Three of the four assignments in this course will be done in groups of 2/3 students (Assignment 1 is done individually). 
-Groups may be drawn from the entire EECS 489 population; members of a group need not all be in the same lecture or discussion section. 
-[Declare your group's membership](https://forms.gle/JkLDWhnW65wmjDna9) by September 19, 2021. 
+Groups may be drawn from the entire EECS 489 population; members of a group need not all be in the same discussion section. 
+[Declare your group's membership](https://forms.gle/3UF5WuW4zaW3m2yXA) by January 22, 2023. 
 After this date, we will form groups from the remaining students. 
 Choose your group members carefully. 
 You should discuss topics such as prior experience, course background, goals for this course, workload and schedule for this semester, and preferred assignment management and work style. 
@@ -31,9 +31,9 @@ In case of disputes regarding contribution, an instructor may examine the commit
 
 Students may be fired from a group by the majority vote of the remaining members. 
 The procedure for this is as follows: 
-(1) documented "gentle warning" of risk of firing in e-mail, with cc to all group members and to `eecs489-staff`, with cause and specific work required to remain in group; 
+(1) documented "gentle warning" of risk of firing in e-mail, with cc to all group members and to `eecs489-staff-w23`, with cause and specific work required to remain in group; 
 (2) allow at least 72 hours for compliance; 
-(3) if the problems persist, e-mail statement of firing to the group and to `eecs489-staff`. 
+(3) if the problems persist, e-mail statement of firing to the group and to `eecs489-staff-w23`. 
 Fired group members may join another group; students who cannot find a group must complete the remaining assignments by themselves.
 
 Managing group dynamics and using each group member's time and talents effectively can be difficult. 
@@ -45,7 +45,7 @@ We encourage everyone to read [Coping with hitchhikers and couch potatoes on tea
 ### Turning in Assignments
 Sometimes unexpected events make it difficult to submit a assignment on time. 
 For this reason, each individiual will have **1 late day for Assignment 1 that will expire if not used**; each group will have **a total of 3 late days throughout the semester across assignments 2 to 4**. 
-*You must send an email to eecs489-staff@umich.edu if you plan on using a late day before using it.*
+*You must send an email to eecs489-staff-w23@umich.edu if you plan on using a late day before using it.*
 
 These late days should only be used to deal with unexpected problems such as illness. 
 They should not be used simply to start later on a assignment or because you are having difficulty completing the assignment. 
@@ -54,7 +54,7 @@ Use late days judiciously.
 Weekend days are counted in the same way as weekdays (e.g., if the assignment deadline is Friday and you turn it in Sunday, that's two days late).
 
 To request an extension beyond the free late days, you must discuss your situation with an instructor **before** the deadline and provide written documentation. 
-Extensions will typically not be granted, even for computer problems, illness, family emergencies, etc.. 
+Extensions will typically not be granted, even for computer problems, illness, family emergencies, etc. 
 In most cases, with cooperation and good faith on your part, your group will be able and expected to make up the deficit without needing an extension. 
 You can avoid most problems by starting the assignments early and keeping backup files. 
 If a family/personal emergency causes you to miss a significant number of days, please see an instructor to decide the best course of action. 
