@@ -11,7 +11,7 @@
 | Member (uniqname) | Role | Office Hours |
 | :---------------- | :--- | :----------- |
 | [Z. Morley Mao](https://web.eecs.umich.edu/~zmao/) (zmao) | Faculty | [Fri: 9 - 10 AM](https://officehours.it.umich.edu/queue/1293) and by appt.
-| Karen Lou | GSI | [Monday 4-6pm]
+| Laura Lou | GSI | [Monday 4-6pm]
 | Leo Zhu  | GSI | [Tuesday 4-6pm]
 
 ### Piazza
