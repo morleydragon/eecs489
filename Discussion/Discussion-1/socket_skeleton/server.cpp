@@ -22,8 +22,14 @@ int handle_connection(int connectionfd) {
 	printf("New connection %d\n", connectionfd);
 
 	// (1) Receive message from client.
+	char msg[MAX_MESSAGE_SIZE+1];
+	memset(msg, 0, sizeof(msg));
+	size_t totalrecv = 0;
+	size_t recvsize = 0;
+	
 
 	// (2) Print out the message
+	
 
 	// (3) Close connection
 
@@ -43,8 +49,14 @@ int handle_connection(int connectionfd) {
 int run_server(int port, int queue_size) {
 
 	// (1) Create socket
+	
 
 	// (2) Set the "reuse port" socket option
+	int yesval = 1;
+	if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &yesval, sizeof(yesval)) == -1) {
+		perror("Error setting socket options");
+		return -1;
+	}
 
 	// (3) Create a sockaddr_in struct for the proper port and bind() to it.
 	struct sockaddr_in addr;
@@ -53,6 +65,7 @@ int run_server(int port, int queue_size) {
 	}
 
 	// (3b) Bind to the port.
+	
 
 	// (3c) Detect which port was chosen.
 	port = get_port_number(sockfd);
@@ -61,6 +74,9 @@ int run_server(int port, int queue_size) {
 	// (4) Begin listening for incoming connections.
 
 	// (5) Serve incoming connections one by one forever.
+	while (true) {
+		
+	}
 }
 
 int main(int argc, const char **argv) {
