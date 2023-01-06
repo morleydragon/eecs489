@@ -22,16 +22,29 @@ int handle_connection(int connectionfd) {
 	printf("New connection %d\n", connectionfd);
 
 	// (1) Receive message from client.
-	char msg[MAX_MESSAGE_SIZE+1];
+
+	char msg[MAX_MESSAGE_SIZE + 1];
 	memset(msg, 0, sizeof(msg));
-	size_t totalrecv = 0;
-	size_t recvsize = 0;
-	
+
+	// Call recv() enough times to consume all the data the client sends.
+	size_t recvd = 0;
+	ssize_t rval;
+	do {
+		// Receive as many additional bytes as we can in one call to recv()
+		// (while not exceeding MAX_MESSAGE_SIZE bytes in total).
+		rval = recv(connectionfd, msg + recvd, MAX_MESSAGE_SIZE - recvd, 0);
+		if (rval == -1) {
+			perror("Error reading stream message");
+			return -1;
+		}
+		recvd += rval;
+	} while (rval > 0);  // recv() returns 0 when client closes
 
 	// (2) Print out the message
-	
+	printf("Client %d says '%s'\n", connectionfd, msg);
 
-	// (3) Close connection
+	// (4) Close connection
+	close(connectionfd);
 
 	return 0;
 }
@@ -49,7 +62,11 @@ int handle_connection(int connectionfd) {
 int run_server(int port, int queue_size) {
 
 	// (1) Create socket
-	
+	int sockfd = socket(AF_INET, SOCK_STREAM, 0);
+	if (sockfd == -1) {
+		perror("Error opening stream socket");
+		return -1;
+	}
 
 	// (2) Set the "reuse port" socket option
 	int yesval = 1;
@@ -65,17 +82,29 @@ int run_server(int port, int queue_size) {
 	}
 
 	// (3b) Bind to the port.
-	
+	if (bind(sockfd, (sockaddr *) &addr, sizeof(addr)) == -1) {
+		perror("Error binding stream socket");
+		return -1;
+	}
 
 	// (3c) Detect which port was chosen.
 	port = get_port_number(sockfd);
 	printf("Server listening on port %d...\n", port);
 
 	// (4) Begin listening for incoming connections.
+	listen(sockfd, queue_size);
 
 	// (5) Serve incoming connections one by one forever.
 	while (true) {
-		
+		int connectionfd = accept(sockfd, 0, 0);
+		if (connectionfd == -1) {
+			perror("Error accepting connection");
+			return -1;
+		}
+
+		if (handle_connection(connectionfd) == -1) {
+			return -1;
+		}
 	}
 }
 
