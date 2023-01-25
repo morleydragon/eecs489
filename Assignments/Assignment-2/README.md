@@ -321,7 +321,7 @@ NUM_LINKS: <number of links in the network>
 (repeats NUM_LINKS - 1 times)
 ```
 
-<img src="link-cost.PNG" title="Video CDN in the wild" alt="" width="400" height="155"/>
+<img src="link-cost.png" title="Video CDN in the wild" alt="" width="400" height="155"/>
 
 As an example, the network shown above will have the following text file, `sample_geography.txt`:
 ```
