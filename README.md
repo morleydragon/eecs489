@@ -107,3 +107,4 @@ The tentative point breakdown is:
 | Midterm Exam | 25%        
 | Final Exam   | 25%
 | **Total**    |100%
+| Quiz (Bonus) |  2%  
