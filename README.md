@@ -10,9 +10,9 @@
 
 | Member (uniqname) | Role | Office Hours |
 | :---------------- | :--- | :----------- |
-| [Z. Morley Mao](https://web.eecs.umich.edu/~zmao/) (zmao) | Faculty | [Fri: 9 - 10 AM](https://officehours.it.umich.edu/queue/1293) and by appt.
-| Yukun (Laura) Lou (louyukun)  | GSI | [Monday 3-5pm](https://officehours.it.umich.edu/queue/1295) 
-| Yuanli (Leo) Zhu  (leozhu) | GSI | [Tuesday 4-6pm](https://officehours.it.umich.edu/queue/1295)
+| [Z. Morley Mao](https://web.eecs.umich.edu/~zmao/) (zmao) | Faculty | [Mon 10:45-11:45am](https://officehours.it.umich.edu/queue/1293) and by appt.
+| Yukun (Laura) Lou (louyukun)  | GSI | [Monday 3-5:20pm, Wed 3-3:40pm](https://officehours.it.umich.edu/queue/1295) 
+| Yuanli (Leo) Zhu  (leozhu) | GSI | [Tuesday 4-6pm, Thursday 7:30-8:30pm](https://officehours.it.umich.edu/queue/1295)
 
 ### Piazza
 All communication regarding this course must be via [Piazza](https://piazza.com/class/lc7u1gvcpzr2r6). 
