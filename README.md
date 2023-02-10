@@ -10,9 +10,9 @@
 
 | Member (uniqname) | Role | Office Hours |
 | :---------------- | :--- | :----------- |
-| [Z. Morley Mao](https://web.eecs.umich.edu/~zmao/) (zmao) | Faculty | [Fri: 9 - 10 AM](https://officehours.it.umich.edu/queue/1293) and by appt.
-| Yukun (Laura) Lou (louyukun)  | GSI | [Monday 3-5pm](https://officehours.it.umich.edu/queue/1295) 
-| Yuanli (Leo) Zhu  (leozhu) | GSI | [Tuesday 4-6pm](https://officehours.it.umich.edu/queue/1295)
+| [Z. Morley Mao](https://web.eecs.umich.edu/~zmao/) (zmao) | Faculty | [Mon 10:45-11:45am](https://officehours.it.umich.edu/queue/1293) and by appt.
+| Yukun (Laura) Lou (louyukun)  | GSI | [Monday 3-5:20pm, Wed 3-3:40pm](https://officehours.it.umich.edu/queue/1295) 
+| Yuanli (Leo) Zhu  (leozhu) | GSI | [Tuesday 4-6pm, (starting Feb 16: Thursday 7:30-8:30pm)](https://officehours.it.umich.edu/queue/1295)
 
 ### Piazza
 All communication regarding this course must be via [Piazza](https://piazza.com/class/lc7u1gvcpzr2r6). 
@@ -51,7 +51,7 @@ Nonetheless, you must have a good working knowledge of C/C++ and Unix family of 
 | 01/30/23 | [TCP Basics] | [Flow and Congestion Control] | 3.5, 3.6 
 | 02/06/23 | [More Congestion Control]| [Network Layer and IP] | 3.7, 4.1, 4.3.1, 4.3.2, 4.3.5
 | 02/13/23 |  [IP Routers] |  [*Midterm Review*] | 4.2
-| 02/20/23 | **No Class** | **MIDTERM (90 Min; Online) <br> 9 AM EDT <br>** |  | A2 Due
+| 02/20/23 | **No Class** | **MIDTERM (80 Min; Online) <br> 9 AM EDT <br>** |  | A2 Due
 | 02/27/23 | **No Class** | **No Class** | | A3 Out
 | 03/06/23 | [Routing Fundamentals] | [Intra-AS Routing]| 5.1, 5.2, 5.3
 | 03/13/23 | [IP Addressing and Inter-AS Routing]| [BGP]| 4.3.3, 5.4
