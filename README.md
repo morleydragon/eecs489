@@ -60,7 +60,7 @@ Nonetheless, you must have a good working knowledge of C/C++ and Unix family of 
 | 04/03/23 | [Wireless Networking]| [Datacenter Networking]| 6.6, 7.1, 7.2, 7.3
 | 04/10/23 | [*Final Review*] | **No Class** | 
 | 04/17/23 |**No Class** | | | A4 Due
-| 04/21/23 | **FINAL (90 Min; Online) <br> 9 AM EDT <br>**
+| 04/21/23 | **FINAL (90 Min; Online) <br> 1:30 pm - 3:30 pm <br>**
 
 ## Policies
 
