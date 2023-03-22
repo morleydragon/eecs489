@@ -45,6 +45,38 @@ Your assignment will run in a virtual machine. The password is the same as the u
 
 This VM is different from the ones used for the first three assignments, it contains extra configuration files necessary to complete the project.
 
+**You can follow these steps to create a shared folder.**
+1. Go to “Virtual Machine Settings” and enable the shared folder feature.
+2. Add a shared folder.
+3. The shared folder should appear under /mnt/hgfs
+Note: if you cannot find the shared folder in the guest os, run the following command in the terminal of the guest:
+```bash
+# list the shared folders
+vmware-hgfsclient
+# mount all shared folders under /mnt/hgfs
+sudo vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other
+```
+
+**You can follow these steps to setup the internet.**
+1. Make sure your network adapter is in “NAT: Used to share the host’s IP address”.
+2. In the terminal of the guest, run:
+```bash
+ip link
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: ens33: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 00:0c:29:a5:cd:b6 brd ff:ff:ff:ff:ff:ff
+
+# Your interface might not be ens33, you should use the name given above
+
+sudo ip link set ens33 up
+
+sudo dhclient ens33 -v
+```
+
+You may install tools that suit your workflow. **But DO NOT update the software in the VM.** 
+You can find a guide on [how to troubleshoot the VM here](https://eecs388.org/vmguide.html#troubleshooting)
+
 ### Starter Code
 
 The starter code can be found in your VM at `$HOME/p4_starter_code/router/`
