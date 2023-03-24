@@ -223,7 +223,7 @@ In summary, your solution:
 4. MUST generate the correct ICMP messages for these cases:
     * Receive an ICMP echo request.
     * A received packet's destination has no forwarding table entry.
-    * The router cannot determine the link layer address of a packet's next hop. "cannot determine" means there is no ARP entry and 7 consecutive ARP requests fail.
+    * The router cannot determine the link layer address of a packet's next hop. "cannot determine" means there is no ARP entry and 5 consecutive ARP requests fail.
     * A UDP or TCP packet is sent to one of the router's interfaces. This MUST generate an ICMP port unreachable message.
     * A packet's TTL, after being decremented, is 0.
 5. The router MUST correctly route packets using IPv4 between the Internet and the application servers.
