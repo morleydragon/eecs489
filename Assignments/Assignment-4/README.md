@@ -57,6 +57,26 @@ vmware-hgfsclient
 sudo vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other
 ```
 
+If you encounter
+
+```
+vmhgfs-fuse: command not found
+```
+Try to do the following in the VM
+```
+git clone https://github.com/rasa/vmware-tools-patches.git
+cd vmware-tools-patches
+sudo ./patched-open-vm-tools.sh
+```
+You may need to install dpkg-dev
+```
+sudo apt install dpkg-dev
+```
+You may also need to install libdpkg-perl version 1.17.5ubuntu5 required by dpkg-dev
+```
+sudo apt install libdpkg-perl=1.17.5ubuntu5
+```
+
 **You can follow these steps to setup the internet.**
 1. Make sure your network adapter is in “NAT: Used to share the host’s IP address”.
 2. In the terminal of the guest, run:
@@ -146,7 +166,7 @@ ICMP sends control information. In this assignment, your router will use ICMP to
 
 * **Echo reply (type 0):** Sent in response to an echo request (`ping`) to one of the router's interfaces. (This is only for echo requests to any of the router's IPs. An echo request sent elsewhere should be forwarded).
 * **Destination net unreachable (type 3, code 0):** Sent if there is a non-existent route to the destination IP (no matching entry in routing table when forwarding an IP packet).
-* **Destination host unreachable (type 3, code 1):** Sent after five ARP requests were sent to the next-hop IP without a response.
+* **Destination host unreachable (type 3, code 1):** Sent after 7 ARP requests were sent to the next-hop IP without a response.
 * **Port unreachable (type 3, code 3):** Sent if an IP packet containing a UDP or TCP payload is sent to one of the router's interfaces. This is needed for `traceroute` to work.
 * **Time exceeded (type 11, code 0):** Sent if an IP packet is discarded during processing because the TTL field is 0. This is also needed for `traceroute` to work.
 
@@ -222,7 +242,7 @@ In summary, your solution:
 4. MUST generate the correct ICMP messages for these cases:
     * Receive an ICMP echo request.
     * A received packet's destination has no forwarding table entry.
-    * The router cannot determine the link layer address of a packet's next hop. "cannot determine" means there is no ARP entry and 5 consecutive ARP requests fail.
+    * The router cannot determine the link layer address of a packet's next hop. "cannot determine" means there is no ARP entry and 7 consecutive ARP requests fail.
     * A UDP or TCP packet is sent to one of the router's interfaces. This MUST generate an ICMP port unreachable message.
     * A packet's TTL, after being decremented, is 0.
 5. The router MUST correctly route packets using IPv4 between the Internet and the application servers.
