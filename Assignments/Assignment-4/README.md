@@ -57,6 +57,26 @@ vmware-hgfsclient
 sudo vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other
 ```
 
+If you encounter
+
+```
+vmhgfs-fuse: command not found
+```
+Try to do the following in the VM
+```
+git clone https://github.com/rasa/vmware-tools-patches.git
+cd vmware-tools-patches
+sudo ./patched-open-vm-tools.sh
+```
+You may need to install dpkg-dev
+```
+sudo apt install dpkg-dev
+```
+You may also need to install libdpkg-perl version 1.17.5ubuntu5 required by dpkg-dev
+```
+sudo apt install libdpkg-perl=1.17.5ubuntu5
+```
+
 **You can follow these steps to setup the internet.**
 1. Make sure your network adapter is in “NAT: Used to share the host’s IP address”.
 2. In the terminal of the guest, run:
