@@ -146,7 +146,7 @@ ICMP sends control information. In this assignment, your router will use ICMP to
 
 * **Echo reply (type 0):** Sent in response to an echo request (`ping`) to one of the router's interfaces. (This is only for echo requests to any of the router's IPs. An echo request sent elsewhere should be forwarded).
 * **Destination net unreachable (type 3, code 0):** Sent if there is a non-existent route to the destination IP (no matching entry in routing table when forwarding an IP packet).
-* **Destination host unreachable (type 3, code 1):** Sent after five ARP requests were sent to the next-hop IP without a response.
+* **Destination host unreachable (type 3, code 1):** Sent after 7 ARP requests were sent to the next-hop IP without a response.
 * **Port unreachable (type 3, code 3):** Sent if an IP packet containing a UDP or TCP payload is sent to one of the router's interfaces. This is needed for `traceroute` to work.
 * **Time exceeded (type 11, code 0):** Sent if an IP packet is discarded during processing because the TTL field is 0. This is also needed for `traceroute` to work.
 
@@ -222,7 +222,7 @@ In summary, your solution:
 4. MUST generate the correct ICMP messages for these cases:
     * Receive an ICMP echo request.
     * A received packet's destination has no forwarding table entry.
-    * The router cannot determine the link layer address of a packet's next hop. "cannot determine" means there is no ARP entry and 5 consecutive ARP requests fail.
+    * The router cannot determine the link layer address of a packet's next hop. "cannot determine" means there is no ARP entry and 7 consecutive ARP requests fail.
     * A UDP or TCP packet is sent to one of the router's interfaces. This MUST generate an ICMP port unreachable message.
     * A packet's TTL, after being decremented, is 0.
 5. The router MUST correctly route packets using IPv4 between the Internet and the application servers.
